@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../public/font/Exo_2/Exo2-Italic-VariableFont_wght.ttf') format('woff2'),
+    url('../public/font/Exo_2/Exo2-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+  
+  }
+  @font-face {
+    font-family: 'Maker';
+    src: url('../public/font/Permanent_Marker/Permanent_Marker/PermanentMarker-Regular.ttf') format('woff2'),
+    url('../public/font/Permanent_Marker/Exo_2/Exo2-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+  
+  }
+
+:root{
+    --color-primary: #b4cd02;
+    --color-secondary: #333;
+    --color-vdark:#445616;
+    --color-letter: #ddd;
+
+}
+
+
+
+.title{
+  filter: drop-shadow(0px 0px 5px rgba(177, 204, 4, 0.797));
+  font-size: 3rem;
+}
+
+.accordion-button {
+    background-color: var(--color-secondary);
+    color: var(--color-letter);
+    box-shadow: 0px 0px 5px 2px rgba(177, 204, 4, 0.797);
+    border: 2px solid var(--color-letter);
+  }
+  .acordion-button:active{
+    background-color: var(--color-vdark);
+    color: var(--color-letter);
+    border: 2px solid var(--color-letter);
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: var(--color-vdark);
+    color: var(--color-letter);
+    border: 2px solid var(--color-letter);
+  }
+  .accordion-body {
+    background-color: var(--color-secondary);
+    color: var(--color-letter);
+    border: 2px solid var(--color-letter);
+  }
+  .accordion-button::after{
+    filter: invert(1);
+  }
+   .pon{
+    color: var(--color-primary);
+
+  }
+
+iframe{
+  width: 70%;
+  height: 400px;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0px 0px 5px 2px rgba(177, 204, 4, 0.797);
+}
+  
+  
+
+  hr{
+
+    border: 2px solid var(--color-primary);
+    box-shadow: 0px 0px 5px 2px rgba(177, 204, 4, 0.797);
+  }
+
+
+  .chat-container {
+    position: relative;
+ 
+    
+   
+    
+  }
+  
+  .toast-container {
+    z-index: 1055; 
+  }
+  
+  .toast img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  .toast{
+    background-color: var(--color-secondary);
+    color: var(--color-letter);
+    box-shadow: 0px 0px 5px 2px rgba(177, 204, 4, 0.797);
+  }
+  .toast-header{
+    background-color: var(--color-secondary);
+    color: var(--color-letter);
+    box-shadow: 0px 0px 5px 2px rgba(177, 204, 4, 0.797);
+  }
+  

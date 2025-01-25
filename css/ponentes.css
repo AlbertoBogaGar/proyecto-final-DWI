@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../public/font/Exo_2/Exo2-Italic-VariableFont_wght.ttf') format('woff2'),
+    url('../public/font/Exo_2/Exo2-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+  
+  }
+  @font-face {
+    font-family: 'Maker';
+    src: url('../public/font/Permanent_Marker/Permanent_Marker/PermanentMarker-Regular.ttf') format('woff2'),
+    url('../public/font/Permanent_Marker/Exo_2/Exo2-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+  
+  }
+  :root{
+    --color-primary: #b4cd02;
+    --color-secondary: #333;
+    --color-vdark:#445616;
+    --color-letter: #ddd;
+
+}
+  body{
+    font-family: 'Exo 2', sans-serif;
+    color: var(--color-letter);
+  }
+  h3,h4{
+    color: var(--color-primary);
+    font-size: 3.5rem;
+  }
+  small{
+    color: var(--color-primary);
+  }
+.img-p{
+    box-shadow: 0px 0px 5px 2px rgba(177, 204, 4, 0.797);
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+hr{
+
+    border: 2px solid var(--color-primary);
+    box-shadow: 0px 0px 5px 2px rgba(177, 204, 4, 0.797);
+  }

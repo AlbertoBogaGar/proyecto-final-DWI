@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Exo 2';
+    src: url('../public/font/Exo_2/Exo2-Italic-VariableFont_wght.ttf') format('woff2'),
+    url('../public/font/Exo_2/Exo2-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+  
+  }
+  @font-face {
+    font-family: 'Maker';
+    src: url('../public/font/Permanent_Marker/Permanent_Marker/PermanentMarker-Regular.ttf') format('woff2'),
+    url('../public/font/Permanent_Marker/Exo_2/Exo2-VariableFont_wght.ttf') format('woff');
+    font-style: normal;
+  
+  }
+
+:root{
+    --color-primary: #b4cd02;
+    --color-secondary: #333;
+    --color-vdark:#445616;
+    --color-letter: #ddd;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Exo 2', sans-serif;
+  color: var(--color-letter);
+  background: url('../public/noise.png');
+  background-color: var(--color-secondary);
+  font-size: 1.2rem;
+
+}
+
+
+
+.navbar {
+    background-color: var(--color-secondary);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--color-letter);
+    position: relative;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--color-primary);
+  }
+
+  .nav-link.active {
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--color-primary);
+    transition: width 0.3s;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    
+    filter: brightness(0.8);
+    border: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+
+  .nav-logo {
+    width: 50%;
+  }
+
+  .dropdown-menu {
+    background-color: var(--color-secondary);
+    border: none;
+  }
+
+  .dropdown-item {
+    color: var(--color-letter);
+  }
+
+  .dropdown-item:hover {
+    color: var(--color-primary);
+    background-color: transparent;
+  }
+
+
+
+
+
+
+
+
+  .foot ul{
+    list-style: none;
+  }
+  
+  .foot ul a{
+    color: var(--color-letter);
+    text-decoration: none;
+  
+  }
