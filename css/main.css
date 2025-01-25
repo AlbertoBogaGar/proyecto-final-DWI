@@ -121,3 +121,18 @@ body {
     text-decoration: none;
   
   }
+
+  @media (max-width: 768px) {
+    .hero-image {
+      width: 80%; /* Ajusta el tamaño según sea necesario */
+    }
+    .politics{
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+
+    .politics ul{
+      padding-left:0;
+    }
+  }
