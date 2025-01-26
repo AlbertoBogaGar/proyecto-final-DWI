@@ -130,7 +130,7 @@ hr{
   }
 
   @media (max-width: 768px) {
-    .dropdown-menu {
-      margin-top: 25px; /* Ajusta este valor según sea necesario */
+    .btn-group {
+      margin-top: 1px; /* Ajusta este valor según sea necesario */
     }
   }
