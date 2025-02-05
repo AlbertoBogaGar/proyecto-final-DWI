@@ -264,14 +264,14 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const toasts = document.querySelectorAll(".toast");
-        let delay = 1000; // Tiempo inicial antes de mostrar el primer toast
+        let delay = 1000; 
     
         toasts.forEach((toast) => {
           setTimeout(() => {
             const bsToast = new bootstrap.Toast(toast);
             bsToast.show();
           }, delay);
-          delay += 3000; // Incrementa el tiempo para que aparezcan escalonados
+          delay += 3000; 
         });
       });
     </script>
